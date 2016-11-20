@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Retro • A Vim Based Editor for the 21st Century</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="retro-logo">
+        <svg viewBox="0 0 800 600">
+            <symbol id="s-text"><text text-anchor="middle"
+                  x="50%"
+                  y="42%"
+                  class="text--line"
+                  >
+              the
+            </text>
+            <text text-anchor="middle"
+                  x="50%"
+                  y="68%"
+                  class="text--line2"
+                  >
+              Retro
+            </text></symbol>
+
+            <g class="g-ants">
+                <use xlink:href="#s-text"
+                  class="text-copy"></use>
+                <use xlink:href="#s-text"
+                  class="text-copy"></use>
+                <use xlink:href="#s-text"
+                  class="text-copy"></use>
+                <use xlink:href="#s-text"
+                  class="text-copy"></use>
+                <use xlink:href="#s-text"
+                  class="text-copy"></use>
+            </g>
+        </svg>
+
+        <div id="beta-testers">
+            <p>Be a beta tester</p>
+            <p><input type="text" placeholder=">_ INSERT YOUR EMAIL HERE"></p>
+        </div>
+    </div>
+
+    <audio oncanplay="myOnCanPlayFunction()"
+        autoplay loop>
+      <source src="song-8bit.mp3" type="audio/mpeg">
+    </audio>
+
+    <div class="video"></div>
+
+    <script>
+        function myOnCanPlayFunction() {
+            var video = document.querySelector('.video');
+            video.innerHTML = '<video autoplay loop muted> \
+                <source src="video.mp4" type="video/mp4"> \
+            </video>';
+        }
+    </script>
+</body>
+</html>
