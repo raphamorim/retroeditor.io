@@ -64,20 +64,12 @@
         </div>
     </div>
 
-    <audio oncanplay="myOnCanPlayFunction()"
-        autoplay loop>
+    <audio autoplay loop>
       <source src="song-8bit.mp3" type="audio/mpeg">
     </audio>
 
-    <div class="video"></div>
-
-    <script>
-        function myOnCanPlayFunction() {
-            var video = document.querySelector('.video');
-            video.innerHTML = '<video autoplay loop muted> \
-                <source src="video.mp4" type="video/mp4"> \
-            </video>';
-        }
-    </script>
+    <video autoplay loop muted> 
+      <source src="video.mp4" type="video/mp4">
+    </video>
 </body>
 </html>
